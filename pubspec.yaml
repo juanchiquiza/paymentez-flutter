@@ -1,0 +1,51 @@
+name: paymentez_mobile
+description: A new Flutter module to use the paymentez services for Android and IOS apps.
+
+version: 1.0.0+3
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  dio: ^3.0.9
+  equatable: ^1.1.1
+  meta: ^1.1.8
+  font_awesome_flutter: ^8.8.1
+  flutter_bloc: ^4.0.0
+  path_provider: ^1.6.8
+  after_layout: ^1.0.7+2
+  crypto: ^2.1.4
+  flutter_svg: ^0.18.0
+  mask_text_input_formatter: ^1.0.6
+  fluro: ^1.6.3
+  flutter_kount:
+    git:
+      url: ssh://git@bitbucket.org/p_gateway/flutter_kount.git
+      ref: master
+  flutter_card_io_v2:
+    git:
+      url: ssh://git@bitbucket.org/p_gateway/flutter_card_io_v2.git
+      ref: master
+
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/
+    - assets/images/card_generic.png
+  uses-material-design: true
+  module:
+    androidX: true
+    androidPackage: com.paymentez.paymentez_mobile
+    iosBundleIdentifier: com.paymentez.paymentezMobile
+
+flutter_intl:
+  enabled: true
